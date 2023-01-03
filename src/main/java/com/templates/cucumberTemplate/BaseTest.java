@@ -18,7 +18,7 @@ public class BaseTest {
 	public static WebDriver driver;
 	public void LunchTheBrowser() throws MalformedURLException {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setBrowserName("MicrosoftEdge");
+		capabilities.setBrowserName("chrome");
 		capabilities.setPlatform(Platform.WIN10);
 		
 		driver= new RemoteWebDriver(new URL("http://192.168.1.104:4444"), capabilities);
