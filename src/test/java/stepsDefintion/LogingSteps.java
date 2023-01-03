@@ -1,5 +1,6 @@
 package stepsDefintion;
 
+import java.net.MalformedURLException;
 import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
@@ -23,7 +24,7 @@ import io.cucumber.java.en.When;
 public class LogingSteps extends BaseTest {
 	
 	@Given("The user open the application and go to login page")
-	public void the_user_open_the_application_and_go_to_login_page() {
+	public void the_user_open_the_application_and_go_to_login_page() throws MalformedURLException {
 		LunchTheBrowser();
 	}
 
