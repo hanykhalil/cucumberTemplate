@@ -21,7 +21,7 @@ public class BaseTest {
 		capabilities.setBrowserName("chrome");
 		capabilities.setPlatform(Platform.WIN10);
 		
-		driver= new RemoteWebDriver(new URL("http://192.168.1.104:4444"), capabilities);
+		driver= new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capabilities);
 //		WebDriverManager.firefoxdriver().setup();
 //		driver= new FirefoxDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
