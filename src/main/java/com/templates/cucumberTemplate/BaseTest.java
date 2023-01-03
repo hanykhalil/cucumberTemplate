@@ -20,7 +20,7 @@ public class BaseTest {
 		DesiredCapabilities capabilities = new DesiredCapabilities();
 		capabilities.setBrowserName("chrome");
 		capabilities.setPlatform(Platform.WIN10);
-		
+		WebDriverManager.chromedriver().setup();
 		driver= new RemoteWebDriver(new URL("http://192.168.1.104:4444"), capabilities);
 //		WebDriverManager.firefoxdriver().setup();
 //		driver= new FirefoxDriver();
