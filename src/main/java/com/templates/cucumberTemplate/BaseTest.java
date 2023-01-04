@@ -18,9 +18,9 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class BaseTest {
 
 	public static WebDriver driver;
-	public static final String USERNAME = "khalilhany_KLrQIy";
-    public static final String AUTOMATE_KEY = "ckCHbxQXw1dXpFeLpzBC";
-    public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
+//	public static final String USERNAME = "khalilhany_KLrQIy";
+//    public static final String AUTOMATE_KEY = "ckCHbxQXw1dXpFeLpzBC";
+//    public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	
 	public void LunchTheBrowser() throws MalformedURLException {
 //		DesiredCapabilities capabilities = new DesiredCapabilities();
