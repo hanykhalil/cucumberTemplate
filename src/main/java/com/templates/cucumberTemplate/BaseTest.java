@@ -36,7 +36,7 @@ public class BaseTest {
 		browserstackOptions.put("local", "false");
 		capabilities.setCapability("bstack:options", browserstackOptions);
 
-		WebDriverManager.chromedriver().setup();
+//		WebDriverManager.chromedriver().setup();
 		driver= new RemoteWebDriver(new URL(URL), capabilities);
 //		WebDriverManager.firefoxdriver().setup();
 //		driver= new FirefoxDriver();
