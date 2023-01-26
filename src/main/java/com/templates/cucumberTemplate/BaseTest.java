@@ -23,9 +23,9 @@ public class BaseTest {
 //    public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	
 	public void LunchTheBrowser() throws MalformedURLException  {
-		DesiredCapabilities capabilities = new DesiredCapabilities();
-		capabilities.setBrowserName("chrome");
-		capabilities.setPlatform(Platform.WIN10);
+//		DesiredCapabilities capabilities = new DesiredCapabilities();
+//		capabilities.setBrowserName("chrome");
+//		capabilities.setPlatform(Platform.WIN10);
 //		MutableCapabilities capabilities = new MutableCapabilities();
 //		HashMap<String, Object> browserstackOptions = new HashMap<String, Object>();
 //		browserstackOptions.put("osVersion", "16");
@@ -36,10 +36,10 @@ public class BaseTest {
 //		browserstackOptions.put("local", "false");
 //		capabilities.setCapability("bstack:options", browserstackOptions);
 
-//		WebDriverManager.chromedriver().setup();
-		driver= new RemoteWebDriver(new URL("http://192.168.1.104:5555"), capabilities);
-//		WebDriverManager.firefoxdriver().setup();
-//		driver= new FirefoxDriver();
+    	WebDriverManager.chromedriver().setup();
+//		driver= new RemoteWebDriver(new URL("http://192.168.1.104:5555"), capabilities);
+		WebDriverManager.chromedriver().setup();
+		driver= new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://www.deutsche-bank.de/");
 		driver.manage().window().maximize();
