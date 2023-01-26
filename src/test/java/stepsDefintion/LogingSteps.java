@@ -97,7 +97,7 @@ public class LogingSteps extends BaseTest {
 	public void error_message_should_be_appear() {
 		WebElement errorEle= driver.findElement(By.xpath("//h1[text()='Anmeldung fehlgeschlagen']"));
 		errorEle.getText();
-		Assert.assertEquals(errorEle.getText(), "Anmeldung fehlgeschlagen");
+		Assert.assertEquals(errorEle.getText(), "Anmeldung fehlgeschlagen1");
 	    System.out.println(errorEle.getText());
 	}
 
