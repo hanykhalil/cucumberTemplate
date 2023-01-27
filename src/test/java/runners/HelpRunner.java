@@ -6,7 +6,7 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "C:\\Users\\13465\\eclipse\\workspace\\cucumberTemplate\\src\\test\\java\\features"
+@CucumberOptions(features = "C:\\ProgramData\\Jenkins\\.jenkins\\workspace\\Cucumber\\src\\test\\java\\features"
 , glue = "stepsDefintion", tags = "@regression", plugin = {"pretty", "html:target/reports/cucumberReport.html", "json:target/reports/cucumberReport.json"}, monochrome = true)
 public class HelpRunner {
 

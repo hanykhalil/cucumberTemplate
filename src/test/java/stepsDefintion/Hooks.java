@@ -9,13 +9,13 @@ import io.cucumber.java.Before;
 
 public class Hooks extends BaseTest{
 	
-	@Before
+	@Before("@regression")
 	public void runBeforeAnyScenario() 
 	{
 		
 	}
 	
-	@After
+	@After("@regression")
 	public void runAfterAnyScenario()
 	{
 		driver.quit();
