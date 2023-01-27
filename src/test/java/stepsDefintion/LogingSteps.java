@@ -1,4 +1,4 @@
-package com.templates.cucumberTemplate;
+package stepsDefintion;
 
 import java.net.MalformedURLException;
 import java.time.Duration;

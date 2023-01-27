@@ -7,6 +7,7 @@ Feature: Testing login functionality
      #Then The user should navigae to the homepage
  
 	@regression
+	@myGitExcusion
   Scenario Outline: Login with invalid Credentials
   	 Given The user open the application and go to login page
      When The user enter valid "<username>"  and "<password>" "<pass2>" "<pass3>" and click login
