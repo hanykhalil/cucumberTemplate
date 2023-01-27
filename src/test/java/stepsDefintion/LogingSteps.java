@@ -5,6 +5,7 @@ import java.time.Duration;
 import java.util.Iterator;
 import java.util.Set;
 
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.SearchContext;
@@ -22,7 +23,7 @@ import io.cucumber.java.en.When;
 
 
 public class LogingSteps extends BaseTest {
-	
+	@Test
 	@Given("The user open the application and go to login page")
 	public void the_user_open_the_application_and_go_to_login_page() throws MalformedURLException {
 		LunchTheBrowser();
@@ -47,7 +48,7 @@ public class LogingSteps extends BaseTest {
 //    	driver.findElement(By.cssSelector("#pin")).sendKeys(string4);
 //    	driver.findElement(By.cssSelector("#action")).click();
 //	}
-	
+	@Test
 	@When("The user enter valid username  and password pass2 pass3 and click login")
 	public void the_user_enter_valid_username_and_password_pass2_pass3_and_click_login(DataTable data) {
 		WebElement rootHost=driver.findElement(By.id("usercentrics-root"));
@@ -67,7 +68,7 @@ public class LogingSteps extends BaseTest {
     	driver.findElement(By.cssSelector("#pin")).sendKeys(data.cell(0, 3));
     	driver.findElement(By.cssSelector("#action")).click();
 	}
-	
+	@Test
 	@When("The user enter valid {string}  and {string} {string} {string} and click login")
 	public void the_user_enter_valid_and_and_click_login(String string, String string2, String string3, String string4) {
 		WebElement rootHost=driver.findElement(By.id("usercentrics-root"));
@@ -87,12 +88,12 @@ public class LogingSteps extends BaseTest {
     	driver.findElement(By.cssSelector("#pin")).sendKeys(string4);
     	driver.findElement(By.cssSelector("#action")).click();
 	}
-
+	@Test
 	@Then("The user should navigae to the homepage")
 	public void The_user_should_navigae_to_the_homepage() {
 		System.out.println(driver.findElement(By.linkText("Kunden-Logout")).isDisplayed()); 
 	}
-	
+	@Test
 	@Then("error message should be appear")
 	public void error_message_should_be_appear() {
 		WebElement errorEle= driver.findElement(By.xpath("//h1[text()='Anmeldung fehlgeschlagen']"));
