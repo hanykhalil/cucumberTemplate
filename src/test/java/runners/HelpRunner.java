@@ -7,7 +7,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "C:\\Users\\13465\\eclipse\\workspace\\cucumberTemplate\\src\\test\\java\\features"
-, glue = "stepsDefintion", tags = "@myGitExcusion", plugin = {"pretty", "html:target/reports/cucumberReport.html", "json:target/reports/cucumberReport.json"}, monochrome = true)
+, glue = "stepsDefintion", tags = "@regression", plugin = {"pretty", "html:target/reports/cucumberReport.html", "json:target/reports/cucumberReport.json"}, monochrome = true)
 public class HelpRunner {
 
 }
