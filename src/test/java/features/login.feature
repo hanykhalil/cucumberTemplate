@@ -6,7 +6,7 @@ Feature: Testing login functionality
      #|410|2489441|01|98239|
      #Then The user should navigae to the homepage
  
-	@regression
+	
 	@myGitExcusion
   Scenario Outline: Login with invalid Credentials
   	 Given The user open the application and go to login page
